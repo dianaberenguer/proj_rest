@@ -1,0 +1,100 @@
+/**************************
+    GENERAL STYLES 
+***************************/
+
+section {
+	width: 100%;
+	height: 500px;
+}
+
+body {
+	color: #72686C;
+}
+
+/****************************
+	HEADER STYLE 
+*************************/
+header {
+	width: 100%;
+	height: 500px;
+	background-color: #AD796C;
+}
+
+#tabs {
+	width: 100%;
+	height: 50px;
+}
+
+#nav_list {
+	width: 100%;
+	text-align: right;
+
+}
+
+#tabs li{
+	display: inline-block;
+
+}
+
+#sm {
+	float: right;
+}
+
+/**************************
+   SECTION MAP STYLES 
+***************************/
+
+#map {
+	background-color: #bebebe;
+}
+
+/**************************
+   SECTION MEALS STYLES 
+***************************/
+
+#meals {
+	background-color: #E3C892;
+}
+
+/**************************
+   SECTION DESIGN STYLES 
+***************************/
+#design {
+	background-color: #F5851F;
+}
+/**************************
+   SECTION BOOK STYLES 
+***************************/
+#book {
+	background-color:#94B75B;
+}
+
+/**************************
+   SECTION CONTACT STYLES 
+***************************/
+
+#contact {
+	background-color:#F46844;
+}
+
+/**************************
+   SECTION FOOTER STYLES 
+***************************/
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: #ECD615;
+}
+
+footer select  {
+	float: left;
+}
+
+#sm_footer {
+	float:right;
+}
+
+#sm_footer li {
+	display: inline-block;
+}
