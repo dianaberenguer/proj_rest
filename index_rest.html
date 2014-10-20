@@ -64,7 +64,14 @@
 			</section>
 			<section id="design">
 				<button class="l_btn button" >left</button>
+				<div class="container">
+					<div id="slides">
+						<img class="dish_pic" src="images/dish_cat.jpg" alt="Cat Design">
+						<img class="dish_pic" src="images/dish_dog.png" alt="Dog Design">
+					</div>
+				</div>
 				<button class="r_btn button">right</button>
+
 				<!-- slider de fotos de platos -->
 			</section>
 			<section id="book">
@@ -106,5 +113,21 @@
 					<li><img src="" alt="Pinterest"></li>
 				</ul>
 			</footer>
+	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	  <script src="js/jquery.slides.min.js"></script>
+	  <script>
+	    $(function() {
+	      $('#slides').slidesjs({
+	        width: 240,
+	        height: 228,
+	        play: {
+	          active: true,
+	          auto: true,
+	          interval: 5000,
+	          swap: true
+	        }
+	      });
+	    });
+	  </script>
 	</body>
 </html>
