@@ -4,12 +4,12 @@
 		<meta charset="UTF-8">
 		<title>reFusion</title>
 		<!-- STYLES -->
-		<link rel="stylesheet" type="text/css" href="css/rest.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/config.css">
+		<link rel="stylesheet" type="text/css" href="css/rest.css">
 	</head>
 	<body>
-		<header>
+		<header id="introduction" class="windowHeight">
 			<nav id="tabs">
 				<ul id="nav_list">
 					<!-- <li><img src="images/logorest.jpg" alt="logorest"></li> -->
@@ -29,16 +29,22 @@
 				</ul>
 			</nav>
 			<div class="logobox">
-				<img id="mainlogo" src="" alt="mainlogo">
+				<img id="mainlogo" data-stellar-ratio="2" src="images/logo_big.png" alt="mainlogo">
 			</div>
+			<h1 class="sectionTitle" data-stellar-ratio="1.7">Endless possibilities</h1>
+			<h2 class="sectionSubtitle" data-stellar-ratio="1.5">blasfdjkjsadasda</h2>
+			<img src="images/img_hummus.png" data-stellar-ratio="2.5" class="hummus" alt="Hummus" />
+			<img src="images/img_potatoe.png" data-stellar-ratio="4" class="potatoe" alt="Potatoes" />
+			<img src="images/img_sushi.png" data-stellar-ratio="3" class="sushi" alt="Sushi" />
+			<img src="images/img_meat.png" data-stellar-ratio="4" class="meat" alt="Meat" />
 		</header>
-		<section id="map">
+		<section id="map" class="windowHeight">
 			<div>
 				<img src="" alt="mapa_mundi">
 				<!-- cómo lo divimos para que nos haga efecto hover? -->
 			</div>
 		</section>
-		<section id="meals">
+		<section id="meals" class="windowHeight">
 			<div id="menu_choices">
 				<img src="" alt="">
 				<img src="" alt="">
@@ -61,50 +67,53 @@
 				<p id="price">
 				<button id="confirm">OK</button>
 			</aside>
-			</section>
-			<section id="design">
-				<button class="l_btn button" >left</button>
-				<button class="r_btn button">right</button>
-				<!-- slider de fotos de platos -->
-			</section>
-			<section id="book">
-				<div id="card">
-					<p>Continente escogido</p>
-					<p>Titulo menú</p>
-					<p>Plato diseño</p>
-					<img src="" alt="">
-				</div>
-				<button class="button book_btn"></button>
-				<div id="form_container" class="popup">
-					<form id="form">
-						<input type="text" placeholder="Write your name">
-						<input type="text" placeholder="How many people?">
-						<input type="text" placeholder="Which date">
-						<input type="text" placeholder="Email">
-						<button type="submit" class="button sub_btn">Booking</button>
-					</form>
-				</div>
-			</section>
-			<section id="contact">
-				<div id="info">
-					<h3>Address</h3>
-					<p>Oxfor street 45 </br>6376 London</br>0055231652 </br> <a href="">info@refusion.com</a></p>
-					<p>Open from: 1pm to 2am</p>
-				</div>
-			</section>
-			<footer>
-				<!-- lista sprites con tarjetas de pago -->
-				<select id="language" name="languages">
-					<option value="EN">EN</option>
-					<option value="ES">ES</option>
-					<option value="CAT">CAT</option>
-				</select>
-				<ul id="sm_footer">
-					<li><img src="" alt="Facebook"></li>
-					<li><img src="" alt="Instagram"></li>
-					<li><img src="" alt="Google+"></li>
-					<li><img src="" alt="Pinterest"></li>
-				</ul>
-			</footer>
+		</section>
+		<section id="design" class="windowHeight">
+			<button class="l_btn button" >left</button>
+			<button class="r_btn button">right</button>
+			<!-- slider de fotos de platos -->
+		</section>
+		<section id="book" class="windowHeight">
+			<div id="card">
+				<p>Continente escogido</p>
+				<p>Titulo menú</p>
+				<p>Plato diseño</p>
+				<img src="" alt="">
+			</div>
+			<button class="button book_btn"></button>
+			<div id="form_container" class="popup">
+				<form id="form">
+					<input type="text" placeholder="Write your name">
+					<input type="text" placeholder="How many people?">
+					<input type="text" placeholder="Which date">
+					<input type="text" placeholder="Email">
+					<button type="submit" class="button sub_btn">Booking</button>
+				</form>
+			</div>
+		</section>
+		<section id="contact" class="windowHeight">
+			<div id="info">
+				<h3>Address</h3>
+				<p>Oxfor street 45 </br>6376 London</br>0055231652 </br> <a href="">info@refusion.com</a></p>
+				<p>Open from: 1pm to 2am</p>
+			</div>
+		</section>
+		<footer class="windowHeight">
+			<!-- lista sprites con tarjetas de pago -->
+			<select id="language" name="languages">
+				<option value="EN">EN</option>
+				<option value="ES">ES</option>
+				<option value="CAT">CAT</option>
+			</select>
+			<ul id="sm_footer">
+				<li><img src="" alt="Facebook"></li>
+				<li><img src="" alt="Instagram"></li>
+				<li><img src="" alt="Google+"></li>
+				<li><img src="" alt="Pinterest"></li>
+			</ul>
+		</footer>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+			<script type="text/javascript" src="js/rest.js"></script>
 	</body>
 </html>
