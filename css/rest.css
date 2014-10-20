@@ -14,24 +14,21 @@ body {
 
 .sectionTitle {
 	font-size:2rem;
-	width: 500px;
 	color: #fff;
 	position:absolute;
-	top:510px;
-	left:50%;
-	margin-left:-250px;
 	text-align: center;
+	font-family: 'Karla', sans-serif;
+	font-weight:700;
 }
 
 .sectionSubtitle {
 	font-size:1.5rem;
-	width: 500px;
 	color: #fff;
 	position:absolute;
-	top:550px;
-	left:50%;
-	margin-left:-250px;
 	text-align: center;
+	font-family: 'Karla', sans-serif;
+	font-weight:400;
+	line-height:1.7rem;
 }
 
 /*  empty tag where javascript will add the height: of the current window  */
@@ -53,6 +50,20 @@ header {
 	overflow: hidden;
 }
 
+.sectionTitle.header {
+	width: 500px;
+	top:510px;
+	left:50%;
+	margin-left:-250px;
+}
+
+.sectionSubtitle.header {
+	width: 500px;
+	top:570px;
+	left:50%;
+	margin-left:-250px;
+}
+
 #mainlogo {
 	margin: 0 auto;
 	display: block;
@@ -65,7 +76,7 @@ header {
 .potatoe {
 	position:absolute;
 	left:-25px;
-	top:450px;
+	top:430px;
 }
 
 .hummus {
@@ -110,7 +121,31 @@ header {
 ***************************/
 
 #map {
-	background-color: #bebebe;
+	background-color: #c2c2c2;
+	position:relative;
+}
+
+.sectionTitle.map {
+	width: 800px;
+	top:80px;
+	left:50%;
+	margin-left:-400px;
+	color:#000;
+}
+
+.sectionSubtitle.map {
+	width: 500px;
+	top:120px;
+	left:50%;
+	margin-left:-250px;
+	color:#000;
+}
+
+.imgMap {
+	position:absolute;
+	top:250px;
+	left:50%;
+	margin-left:-458px;
 }
 
 /**************************
