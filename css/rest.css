@@ -121,7 +121,7 @@ header {
 ***************************/
 
 #map {
-	background-color: #c2c2c2;
+	background-color: #e4682a;
 	position:relative;
 }
 
@@ -161,7 +161,49 @@ header {
 ***************************/
 #design {
 	background-color: #F5851F;
+	position:relative;
 }
+
+#slides {
+	display:none;
+}
+
+
+.slidesjs-pagination {
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	z-index:999;
+}
+
+.slidesjs-pagination li {
+	float:left;
+	margin-left:5px;
+}
+
+.slidesjs-navigation {
+  margin-top:3px;
+}
+
+.slidesjs-navigation {
+	position:absolute;
+	width:100px;
+	bottom: 20px;
+	left:20px;
+	z-index:999;
+	display:block;
+}
+
+.slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
 /**************************
    SECTION BOOK STYLES 
 ***************************/
