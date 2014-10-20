@@ -76,6 +76,11 @@ $(function(){
 
 	STELLARJS.init();
 
+	$("#slides").slidesjs({
+        width: 400,
+        height: 200
+     });
+
 	jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 	jQuery.extend( jQuery.easing,
