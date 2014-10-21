@@ -199,6 +199,11 @@ header {
 	position:absolute;
 	top:100px;
 	right:100px;
+	padding:30px;
+}
+
+.logoSmall {
+	text-align:center;
 }
 
 /**************************
