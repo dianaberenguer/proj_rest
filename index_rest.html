@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/config.css">
 		<link rel="stylesheet" type="text/css" href="css/rest.css">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents/cssmap-continents.css" />
 	</head>
 	<body>
 		<header id="introduction" class="windowHeight">
@@ -43,9 +44,21 @@
 		</header>
 		<section id="map" class="windowHeight">
 			<div>
-				<img src="images/map_unselected.png" class="imgMap" alt="mapa_mundi" />
 				<h1 class="sectionTitle map" data-stellar-ratio="1.7">We can bring your senses anywhere</h1>
 				<h2 class="sectionSubtitle map" data-stellar-ratio="1.5">Choose a location</h2>
+			</div>
+				
+			<div>
+				<div id="map-continents">
+					 <ul class="continents">
+						  <li class="c1"><a href="#africa">Africa</a></li>
+						  <li class="c2"><a href="#asia">Asia</a></li>
+						  <li class="c3"><a href="#australia-and-southern-pacific">Australia and Southern Pacific</a></li>
+						  <li class="c4"><a href="#europe">Europe</a></li>
+						  <li class="c5"><a href="#north-america">North America</a></li>
+						  <li class="c6"><a href="#south-america">South America</a></li>
+					 </ul>
+				</div>
 				<!-- cómo lo divimos para que nos haga efecto hover? -->
 			</div>
 		</section>
@@ -122,5 +135,11 @@
 			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 			<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 			<script type="text/javascript" src="js/rest.js"></script>
+			<script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script> 
+			<script type="text/javascript">
+				$(function($){
+			    	$('#map-continents').cssMap({'size' : 1280});
+			    });
+			</script>
 	</body>
 </html>

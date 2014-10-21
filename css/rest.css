@@ -127,7 +127,7 @@ header {
 
 .sectionTitle.map {
 	width: 800px;
-	top:80px;
+	top:50px;
 	left:50%;
 	margin-left:-400px;
 	color:#000;
@@ -135,7 +135,7 @@ header {
 
 .sectionSubtitle.map {
 	width: 500px;
-	top:120px;
+	top:90px;
 	left:50%;
 	margin-left:-250px;
 	color:#000;
@@ -147,6 +147,7 @@ header {
 	left:50%;
 	margin-left:-458px;
 }
+
 
 /**************************
    SECTION MEALS STYLES 
