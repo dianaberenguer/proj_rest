@@ -265,7 +265,28 @@ header {
    SECTION BOOK STYLES 
 ***************************/
 #book {
-	background-color:#94B75B;
+	background-color:#FF7400;
+}
+
+#card {
+	width: 400px;
+	height: 350px;
+	background-color: white;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+.total_price {
+	width: 100px;
+	height: 100px;
+	background-color: #FFA356;
+	border-radius: 5px;
+}
+.book_btn {
+	width: 200px;
+	height: 70px;
+	border-radius: 10px;
+	margin: 30px auto;
+	background-color: orange;
 }
 
 /**************************
