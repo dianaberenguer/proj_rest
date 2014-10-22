@@ -207,6 +207,23 @@ header {
 	text-align:center;
 }
 
+.orderList {
+	margin-top:20px;
+}
+
+.orderList li {
+	font-family: 'Karla', sans-serif;
+	font-weight:700;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	border-bottom:#000 dotted 1px;
+	color:#000;
+}
+
+.orderList li span {
+	float:right;
+}
+
 /**************************
    SECTION DESIGN STYLES 
 ***************************/
