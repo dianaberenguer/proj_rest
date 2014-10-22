@@ -267,6 +267,12 @@ header {
 #book {
 	background-color:#FF7400;
 }
+#book_container {
+	background-color: black;
+	margin: 0 auto;
+	width: 500px;
+	height: 600px;
+}
 
 #card {
 	width: 400px;
