@@ -8,7 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/config.css">
 		<link rel="stylesheet" type="text/css" href="css/rest.css">
+
 		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents/cssmap-continents.css" />
+
+		<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+
 	</head>
 	<body>
 		<header id="introduction" class="windowHeight">
@@ -44,31 +50,46 @@
 		</header>
 		<section id="map" class="windowHeight">
 			<div>
-				<img src="images/map_unselected.png" class="imgMap" alt="mapa_mundi" />
 				<h1 class="sectionTitle map" data-stellar-ratio="1.7">We can bring your senses anywhere</h1>
 				<h2 class="sectionSubtitle map" data-stellar-ratio="1.5">Choose a location</h2>
+			</div>
+			<div>
+				<div id="map-continents">
+					 <ul class="continents">
+						  <li class="c1"><a href="#africa">Africa</a></li>
+						  <li class="c2"><a href="#asia">Asia</a></li>
+						  <li class="c3"><a href="#australia-and-southern-pacific">Australia and Southern Pacific</a></li>
+						  <li class="c4"><a href="#europe">Europe</a></li>
+						  <li class="c5"><a href="#north-america">North America</a></li>
+						  <li class="c6"><a href="#south-america">South America</a></li>
+					 </ul>
+				</div>
 				<!-- cómo lo divimos para que nos haga efecto hover? -->
 			</div>
 		</section>
 		<section id="meals" class="windowHeight">
-			<div id="menu_choices">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-			</div>
+
+			<h1 class="sectionTitle meals">What do you want to eat?</h1>
+			<h2 class="sectionSubtitle meals">You're in America <a href="#">[change]</a></h2>
+
+			<ul id="menu_choices">
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
+			</ul>
 			<aside id="order">
+				<div class="logoSmall">
+					<img src="images/logo_small.png" alt="reFusion" />
+				</div>
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>Hamburger</li>
+					<li>French fries</li>
 				</ul>
 				<p id="price">
 				<button id="confirm">OK</button>
@@ -82,12 +103,15 @@
 		</section>
 		<section id="book" class="windowHeight">
 			<div id="card">
-				<p>Continente escogido</p>
-				<p>Titulo menú</p>
-				<p>Plato diseño</p>
-				<img src="" alt="">
+				<h2>Zone</h2>
+				<h3>Continente escogido linkado</h3>
+				<h2>Menu</h2>
+				<h3>Nombre menú linkado</h3>
+				<h2>Design</h2>
+				<h3>Plato escogido linkado</h3>
+				<div class= "total_price">Total Price</div>
 			</div>
-			<button class="button book_btn"></button>
+			<button class="button book_btn">BOOK</button>
 			<div id="form_container" class="popup">
 				<form id="form">
 					<input type="text" placeholder="Write your name">
@@ -105,7 +129,7 @@
 				<p>Open from: 1pm to 2am</p>
 			</div>
 		</section>
-		<footer class="windowHeight">
+		<footer id="footer" class="windowHeight">
 			<!-- lista sprites con tarjetas de pago -->
 			<select id="language" name="languages">
 				<option value="EN">EN</option>
@@ -123,5 +147,11 @@
 			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 			<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 			<script type="text/javascript" src="js/rest.js"></script>
+			<script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script> 
+			<script type="text/javascript">
+				$(function($){
+			    	$('#map-continents').cssMap({'size' : 1280});
+			    });
+			</script>
 	</body>
 </html>

@@ -8,7 +8,7 @@ $(function(){
 	init: function() {
 	    var self = this;
 	    $(function(){
-	        self.$sections = $('#introduction, #map, #meals, #design, #book, #contact').each(function(index){
+	        self.$sections = $('#introduction, #map, #meals, #design, #book, #contact, #footer').each(function(index){
 	            $(this).data('sectionIndex', index);
 	        });
 
@@ -77,9 +77,29 @@ $(function(){
 	STELLARJS.init();
 
 	$("#slides").slidesjs({
-        width: 400,
-        height: 200
+        play: {
+	      active: false,
+	        // [boolean] Generate the play and stop buttons.
+	        // You cannot use your own buttons. Sorry.
+	      effect: "slide",
+	        // [string] Can be either "slide" or "fade".
+	      interval: 5000,
+	        // [number] Time spent on each slide in milliseconds.
+	      auto: true,
+	        // [boolean] Start playing the slideshow on load.
+	      swap: true,
+	        // [boolean] show/hide stop and play buttons
+	      pauseOnHover: false,
+	        // [boolean] pause a playing slideshow on hover
+	      restartDelay: 2500
+	        // [number] restart delay on inactive slideshow
+	    },
+	    pagination: {
+      		active: false,
+      	}
      });
+
+
 
 	jQuery.easing['jswing'] = jQuery.easing['swing'];
 
