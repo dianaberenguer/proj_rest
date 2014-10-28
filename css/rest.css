@@ -357,6 +357,8 @@ margin-left: 5px;
    SECTION BOOK STYLES 
 ***************************/
 #book {
+	background-color:#FF7400;
+	position: relative;
 	background:#000;
 	background-size: cover;
 	background-image: url(../images/background_header.jpg);
@@ -446,6 +448,44 @@ margin-left: 5px;
 	background-color:#fa5f0b;
 	font-size:1.2rem;
 }
+
+
+/**************************
+   		BOOK POPUP FORM
+***************************/
+#form_container {
+	width: 600px;
+	height:600px;
+	border-radius:10px;
+	background-color: #fff;
+	overflow:hidden;
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin-left: -300px
+}
+
+#form {
+	margin: 20px auto;
+
+}
+
+input, select {
+	border: solid 1px #bebebe;
+	width: 450px;
+	height: 60px;
+	border-radius:3px;
+	font-size: 14px;
+	color:#424242;
+	margin:10px auto;
+	padding-left:10px; 
+	display:block;
+
+}
+
+/**************************
+   SECTION CONTACT STYLES 
+***************************/
 
 
 /********************************
