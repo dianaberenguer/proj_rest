@@ -48,7 +48,7 @@ header {
 	position: relative;
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_header.jpg);
+	background-image: url(../images/background_chicken.jpg);
 	overflow: hidden;
 }
 
@@ -119,34 +119,40 @@ margin-left: 5px;
 	margin: 0 auto;
 	display: block;
 	position: absolute;
-	top:50px;
+	top:8rem;
 	left:50%;
-	margin-left: -208px;
+	margin-left: -10rem;
+	width: 20rem;
 }
 
 .potatoe {
 	position:absolute;
 	left:-25px;
 	top:430px;
+	width: 17rem;
 }
 
 .hummus {
 	position: absolute;
-	left:20px;
+	left:15px;
 	top:100px;
+	width: 19rem;
 }
 
 .meat {
 	position:absolute;
 	top:50px;
 	right:-25px;
+	width: 17rem;
 }
 
 .sushi {
 	position:absolute;
 	top:500px;
 	right:50px;
+	width: 20rem;
 }
+
 #tabs {
 	width: 100%;
 	height: 50px;
@@ -172,7 +178,7 @@ margin-left: 5px;
 ***************************/
 
 #map {
-	background-color: #e4682a;
+	background-color: #ef6e2e;
 	position:relative;
 }
 
@@ -209,7 +215,7 @@ margin-left: 5px;
 #meals {
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_header.jpg);
+	background-image: url(../images/background_rest.jpg);
 	overflow: hidden;
 	position: relative;
 }
@@ -226,6 +232,12 @@ margin-left: 5px;
 	top:0px;
 	left:0px;
 	text-align:left;
+}
+
+.link.change {
+	color:#858585;
+	font-size: 1rem;
+	text-decoration: none;
 }
 
 .sectionSubtitle.meals {
@@ -251,7 +263,7 @@ margin-left: 5px;
 #menu_choices li img {
 	width:150px;
 	height:150px;
-	border:#fff solid 2px;
+	border:rgba(0,0,0,0.2); solid 2px;
 }
 
 #order {
@@ -296,6 +308,7 @@ margin-left: 5px;
 	font-family: 'Karla', sans-serif;
 	font-weight:400;
 	background:rgba(0, 0, 0, 0);
+	border-radius: 10px;
 	font-size:1.2rem;
 }
 
@@ -303,7 +316,7 @@ margin-left: 5px;
    SECTION DESIGN STYLES 
 ***************************/
 #design {
-	background-color: #F5851F;
+	background-color: #ef6e2e;
 	position:relative;
 	overflow:hidden;
 }
@@ -329,7 +342,11 @@ margin-left: 5px;
   height:128px;
   font-size:0;
   cursor:pointer;
-  background:url(../images/prev.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  background:url(../images/arrow_left.png) no-repeat;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
 .slidesjs-next {
@@ -342,7 +359,12 @@ margin-left: 5px;
   font-size:0;
   display:block;
   cursor:pointer;
-  background:url(../images/next.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  background:url(../images/arrow_right.png) no-repeat;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+
 }
 
 .slidesjs-play {
@@ -361,7 +383,7 @@ margin-left: 5px;
 	position: relative;
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_header.jpg);
+	background-image: url(../images/background_dishes.jpg);
 	position:relative;
 	overflow:hidden;
 }
@@ -453,6 +475,14 @@ margin-left: 5px;
 /**************************
    		BOOK POPUP FORM
 ***************************/
+
+.sectionSubtitle.form {
+	color:#fa5f0b;
+	margin:20px auto;
+	position:absolute;
+	text-align: center;
+}
+
 #form_container {
 	width: 600px;
 	height:600px;
@@ -467,20 +497,23 @@ margin-left: 5px;
 
 #form {
 	margin: 20px auto;
+}
 
+.button.sub_btn {
+	width: 450px;
+	color:#fff;
 }
 
 input, select {
 	border: solid 1px #bebebe;
 	width: 450px;
 	height: 60px;
-	border-radius:3px;
+	border-radius:10px;
 	font-size: 14px;
 	color:#424242;
 	margin:10px auto;
 	padding-left:10px; 
 	display:block;
-
 }
 
 /**************************
@@ -493,7 +526,7 @@ input, select {
 *********************************/
 
 #contact {
-	background-color:#F46844;
+	background-color:#ef6e2e;
 	position: relative;
 }
 
@@ -540,7 +573,7 @@ input, select {
 footer  {
 	width: 100%;
 	height: 50px; 
-	background-color: #ECD615;
+	background-color: #424242;
 	position: absolute;
 	bottom: 0;
 }
