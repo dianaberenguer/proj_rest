@@ -8,13 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/config.css">
 		<link rel="stylesheet" type="text/css" href="css/rest.css">
-
 		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
-
 		<link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents/cssmap-continents.css" />
-
-		<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
-
 	</head>
 	<body>
 		<header id="introduction" class="windowHeight">
@@ -39,25 +34,26 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="logobox">
-				<img id="mainlogo" data-stellar-ratio="2" src="images/logo_big.png" alt="mainlogo">
+			<div class="headerContainer" data-stellar-ratio="1.7">
+				<div class="logobox">
+					<img id="mainlogo" src="images/logo_big.png" alt="mainlogo">
+				</div>
+
+				<h1 class="sectionTitle header">Create your unique menu</h1>
+				<h2 class="sectionSubtitle header">Choose between endless combination possibilities</h2>
 			</div>
-
-					<h1 class="sectionTitle header" data-stellar-ratio="1.7">Create your unique menu</h1>
-			<h2 class="sectionSubtitle header" data-stellar-ratio="1.5">Choose between endless combination possibilities</h2>
-
-			<img src="images/img_hummus.png" data-stellar-ratio="2.5" class="hummus" alt="Hummus" />
+<!-- 			<img src="images/img_hummus.png" data-stellar-ratio="2.5" class="hummus" alt="Hummus" />
 			<img src="images/img_potatoe.png" data-stellar-ratio="4" class="potatoe" alt="Potatoes" />
 			<img src="images/img_sushi.png" data-stellar-ratio="3" class="sushi" alt="Sushi" />
-			<img src="images/img_meat.png" data-stellar-ratio="4" class="meat" alt="Meat" />
+			<img src="images/img_meat.png" data-stellar-ratio="4" class="meat" alt="Meat" /> -->
 		</header>
 		<section id="map" class="windowHeight">
 			<div>
-				<h1 class="sectionTitle map" data-stellar-ratio="1.7">We can bring your senses anywhere</h1>
-				<h2 class="sectionSubtitle map" data-stellar-ratio="1.5">Choose a location</h2>
+				<h1 class="sectionTitle map" data-stellar-ratio="1.4">We can bring your senses anywhere</h1>
+				<h2 class="sectionSubtitle map" data-stellar-ratio="1.7">Choose a location</h2>
 			</div>
 			<div>
-				<div id="map-continents">
+				<div id="map-continents" data-stellar-ratio="2">
 					 <ul class="continents">
 						  <li class="c1"><a href="#africa">Africa</a></li>
 						  <li class="c2"><a href="#asia">Asia</a></li>
@@ -153,12 +149,7 @@
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 			<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+			<script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script>
 			<script type="text/javascript" src="js/rest.js"></script>
-			<script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script> 
-			<script type="text/javascript">
-				$(function($){
-			    	$('#map-continents').cssMap({'size' : 1280});
-			    });
-			</script>
 	</body>
 </html>

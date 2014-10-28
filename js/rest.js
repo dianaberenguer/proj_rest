@@ -3,7 +3,6 @@ $(function(){
 	var windowHeight = $(window).height();
 	$('.windowHeight').css('height', windowHeight);
 
-
 	var STELLARJS = {
 	init: function() {
 	    var self = this;
@@ -236,6 +235,12 @@ $(function(){
 		}
 	});
 	
-	$.stellar();
+	$.stellar({responsive: true, verticalScrolling:true, hideDistantElements:false});
+
+	$('#map-continents').cssMap({'size' : 1280});
+
+	$('.map-continents').css('left', '50%');
+	$('.map-continents').css('margin-left', '-640px');
+
 
 });
