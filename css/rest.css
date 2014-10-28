@@ -76,6 +76,13 @@ margin-left: 5px;
 
 }
 
+#language {
+	width: 70px;
+	height: 20px;
+	float: left;
+
+}
+
 
 .fa-facebook {
 	color: white;
@@ -156,6 +163,7 @@ margin-left: 5px;
 #tabs {
 	width: 100%;
 	height: 50px;
+	padding: 10px 20px;
 }
 
 #nav_list {
@@ -516,11 +524,6 @@ input, select {
 	display:block;
 }
 
-/**************************
-   SECTION CONTACT STYLES 
-***************************/
-
-
 /********************************
    SECTION CONTACT + FOOTER STYLES 
 *********************************/
@@ -576,6 +579,7 @@ footer  {
 	background-color: #424242;
 	position: absolute;
 	bottom: 0;
+	padding: 10px 20px;
 }
 
 #sm_footer {
@@ -584,6 +588,7 @@ footer  {
 
 #sm_footer li {
 	display: inline-block;
+	padding-left: 5px;
 }
 
 
