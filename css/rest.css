@@ -290,6 +290,7 @@ header {
 ***************************/
 #book {
 	background-color:#FF7400;
+	position: relative;
 }
 #book_container {
 	background-color: black;
@@ -317,6 +318,39 @@ header {
 	border-radius: 10px;
 	margin: 30px auto;
 	background-color: orange;
+}
+
+/**************************
+   		BOOK POPUP FORM
+***************************/
+#form_container {
+	width: 600px;
+	height:600px;
+	border-radius:10px;
+	background-color: #fff;
+	overflow:hidden;
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin-left: -300px
+}
+
+#form {
+	margin: 20px auto;
+
+}
+
+input, select {
+	border: solid 1px #bebebe;
+	width: 450px;
+	height: 60px;
+	border-radius:3px;
+	font-size: 14px;
+	color:#424242;
+	margin:10px auto;
+	padding-left:10px; 
+	display:block;
+
 }
 
 /**************************
