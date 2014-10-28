@@ -76,6 +76,13 @@ margin-left: 5px;
 
 }
 
+#language {
+	width: 70px;
+	height: 20px;
+	float: left;
+
+}
+
 
 .fa-facebook {
 	color: white;
@@ -150,6 +157,7 @@ margin-left: 5px;
 #tabs {
 	width: 100%;
 	height: 50px;
+	padding: 10px 20px;
 }
 
 #nav_list {
