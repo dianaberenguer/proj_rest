@@ -19,13 +19,15 @@
 	<body>
 		<header id="introduction" class="windowHeight">
 			<nav id="tabs">
+				<select id="language" name="languages">
+				<option value="EN">EN</option>
+				<option value="ES">ES</option>
+				<option value="CAT">CAT</option>
+			</select>
 				<ul id="nav_list">
 					<!-- <li><img src="images/logorest.jpg" alt="logorest"></li> -->
-					<li><a href="#map"></a>Map</li>
-					<li><a href="#meals"></a>Meals</li>
-					<li><a href="#design"></a>Design</li>
-					<li><a href="#book"></a>Book</li>
-					<li><a href="#contact"></a>Contact</li>
+					<li><a href="#book">Book</a></li>
+					<li><a href="#contact">Contact</a></li>
 					<li>
 						<ul id="sm">
 							<li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -38,7 +40,7 @@
 			</nav>
 			<div class="logobox">
 				<img id="mainlogo" data-stellar-ratio="2" src="images/logo_big.png" alt="mainlogo">
-			</div>l
+			</div>
 
 					<h1 class="sectionTitle header" data-stellar-ratio="1.7">Create your unique menu</h1>
 			<h2 class="sectionSubtitle header" data-stellar-ratio="1.5">Choose between endless combination possibilities</h2>
@@ -69,39 +71,47 @@
 		</section>
 		<section id="meals" class="windowHeight">
 
-			<h1 class="sectionTitle meals">What do you want to eat?</h1>
-			<h2 class="sectionSubtitle meals">You're in America <a href="#">[change]</a></h2>
+			<div class="meals_centerer">
 
-			<ul id="menu_choices">
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-			</ul>
-			<aside id="order">
-				<div class="logoSmall">
-					<img src="images/logo_small.png" alt="reFusion" />
-				</div>
-				<ul>
-					<li>Hamburger</li>
-					<li>French fries</li>
+				<h1 class="sectionTitle meals">What do you want to eat?</h1>
+				<h2 class="sectionSubtitle meals">You're in America <a href="#">[change]</a></h2>
+
+				<ul id="menu_choices">
+					<li><a href="#" title="#"><img src="images/meals/beef.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/burger.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/mini-burguers.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/ribs.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/frankfurt.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/eggs.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/cerealfruit.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/cake.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/cupcake.jpg" alt="#" /></a></li>
 				</ul>
-				<p id="price">
-				<button id="confirm">OK</button>
-			</aside>
+				<aside id="order">
+					<div class="logoSmall">
+						<img src="images/logo_small.png" alt="reFusion" />
+					</div>
+					<ul class="orderList">
+						<li>Hamburger <span>$20</span></li>
+						<li>French fries <span>$18</span></li>
+					</ul>
+					<button id="confirm">OK</button>
+				</aside>
+			</div>
 		</section>
 		<section id="design" class="windowHeight">
+			<div>
+				<h1 class="sectionTitle map" data-stellar-ratio="1.7">Let's you choose your own design</h1>
+			</div>
 			<div id="slides">
-				<img src="images/dish_dog.png" />
-				<img src="images/dish_cat.jpg" />
+				<img src="images/dish1.png" />
+				<img src="images/dish2.png" />
+				<img src="images/dish3.png" />
 			</div>
 		</section>
 		<section id="book" class="windowHeight">
+			<h1 class="sectionTitle book">Book your plan</h1>
+			<h2 class="sectionSubtitle book">Confirm your choice</h2>
 			<article id="book_container">
 				<div id="card">
 					<h2>Zone</h2>
@@ -110,7 +120,7 @@
 					<h3>Nombre menú linkado</h3>
 					<h2>Design</h2>
 					<h3>Plato escogido linkado</h3>
-					<div class= "total_price">Total Price</div>
+					<div class= "total_price"><span>$20</span><br />per person</div>
 				</div>
 				<button class="button book_btn">BOOK</button>
 			</article>
@@ -141,26 +151,26 @@
 			</div>
 		</section>
 		<section id="contact" class="windowHeight">
-			<div id="info">
-				<h3>Address</h3>
-				<p>Oxford street 45 </br>6376 London</br>0055231652 </br> <a href="">info@refusion.com</a></p>
-				<p>Open from: 1pm to 2am</p>
-			</div>
+			<article class="info_container">
+				<div id="info" class="floating">
+					<h3 class="sectionTitle">Address</h3></br>
+					<p class="sectionSubtitle adress">Oxford street 45</br>6376 London</br>0055231652</br><a href="">info@refusion.com</a></p>
+					<p class="sectionSubtitle hours">Open from: 1pm to 2am</p>
+				</div>
+				<aside >
+					<img class="location floating" src="images/barcelona-map.gif" alt="">
+				</aside>
+			</article>
+			<footer id="footer" >
+				<ul id="sm_footer">
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</footer>
 		</section>
-		<footer id="footer" class="windowHeight">
-			<!-- lista sprites con tarjetas de pago -->
-			<select id="language" name="languages">
-				<option value="EN">EN</option>
-				<option value="ES">ES</option>
-				<option value="CAT">CAT</option>
-			</select>
-			<ul id="sm_footer">
-				<li><img src="" alt="Facebook"></li>
-				<li><img src="" alt="Instagram"></li>
-				<li><img src="" alt="Google+"></li>
-				<li><img src="" alt="Pinterest"></li>
-			</ul>
-		</footer>
+		
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 			<script type="text/javascript" src="js/jquery.slides.min.js"></script>
