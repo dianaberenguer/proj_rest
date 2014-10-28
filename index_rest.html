@@ -71,33 +71,38 @@
 		</section>
 		<section id="meals" class="windowHeight">
 
-			<h1 class="sectionTitle meals">What do you want to eat?</h1>
-			<h2 class="sectionSubtitle meals">You're in America <a href="#">[change]</a></h2>
+			<div class="meals_centerer">
 
-			<ul id="menu_choices">
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-				<li><a href="#" title="#"><img src="images/meals/riceburger.jpg" alt="#" /></a></li>
-			</ul>
-			<aside id="order">
-				<div class="logoSmall">
-					<img src="images/logo_small.png" alt="reFusion" />
-				</div>
-				<ul>
-					<li>Hamburger</li>
-					<li>French fries</li>
+				<h1 class="sectionTitle meals">What do you want to eat?</h1>
+				<h2 class="sectionSubtitle meals">You're in America <a href="#">[change]</a></h2>
+
+				<ul id="menu_choices">
+					<li><a href="#" title="#"><img src="images/meals/beef.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/burger.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/mini-burguers.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/ribs.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/frankfurt.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/eggs.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/cerealfruit.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/cake.jpg" alt="#" /></a></li>
+					<li><a href="#" title="#"><img src="images/meals/cupcake.jpg" alt="#" /></a></li>
 				</ul>
-				<p id="price">
-				<button id="confirm">OK</button>
-			</aside>
+				<aside id="order">
+					<div class="logoSmall">
+						<img src="images/logo_small.png" alt="reFusion" />
+					</div>
+					<ul class="orderList">
+						<li>Hamburger <span>$20</span></li>
+						<li>French fries <span>$18</span></li>
+					</ul>
+					<button id="confirm">OK</button>
+				</aside>
+			</div>
 		</section>
 		<section id="design" class="windowHeight">
+			<div>
+				<h1 class="sectionTitle map" data-stellar-ratio="1.7">Let's you choose your own design</h1>
+			</div>
 			<div id="slides">
 				<img src="images/dish1.png" />
 				<img src="images/dish2.png" />
@@ -105,10 +110,9 @@
 			</div>
 		</section>
 		<section id="book" class="windowHeight">
+			<h1 class="sectionTitle book">Book your plan</h1>
+			<h2 class="sectionSubtitle book">Confirm your choice</h2>
 			<article id="book_container">
-				<div id="title_card">
-					<p>Confirm your choice</p>
-				</div>
 				<div id="card">
 					<h2>Zone</h2>
 					<h3>Continente escogido linkado</h3>
@@ -116,10 +120,9 @@
 					<h3>Nombre menú linkado</h3>
 					<h2>Design</h2>
 					<h3>Plato escogido linkado</h3>
-					<div class= "total_price">Total Price</div>
+					<div class= "total_price"><span>$20</span><br />per person</div>
 				</div>
 				<button class="button book_btn">BOOK</button>
-				<button class="button book_btn surprise">SURPRISE ME</button>
 			</article>
 			<div id="form_container" class="popup">
 				<form id="form">
