@@ -18,37 +18,6 @@ html {
 	line-height:100%;
 }
 
-@media (min-width: 0px) and (max-width: 479px) {
-  html {
-    font-size:60%;
-    line-height: 60%;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  html {
-    font-size:70%;
-    line-height: 70%;
-  }
-  .sectionTitle.header {
-  	top:100px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 959px) {
-  html {
-    font-size:80%;
-    line-height: 80%;
-  }
-}
-
-@media (min-width: 960px) {
-  html {
-    font-size:90%;
-    line-height: 90%;
-  }
-}
-
 body {
 	color: #72686C;
 }
@@ -86,7 +55,7 @@ header {
 	position: relative;
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_header.jpg);
+	background-image: url(../images/background_chicken.jpg);
 	overflow: hidden;
 }
 
@@ -111,6 +80,13 @@ header {
 
 #sm li {
 margin-left: 5px;
+
+}
+
+#language {
+	width: 70px;
+	height: 20px;
+	float: left;
 
 }
 
@@ -160,42 +136,20 @@ margin-left: 5px;
 
 #mainlogo {
 	position: absolute;
-	top:2rem;
+	/*top:2rem;
 	left:50%;
 	margin-left:-12.8%;
-	width:25%;
+	width:25%;*/
+	top:8rem;
+	left:50%;
+	margin-left: -10rem;
+	width: 20rem;
 }
 
-.potatoe {
-	position:absolute;
-	left:-25px;
-	top:430px;
-	width:20%;
-}
-
-.hummus {
-	position: absolute;
-	left:20px;
-	top:100px;
-	width:20%;
-}
-
-.meat {
-	position:absolute;
-	top:50px;
-	right:-25px;
-	width:20%;
-}
-
-.sushi {
-	position:absolute;
-	top:500px;
-	right:50px;
-	width:20%;
-}
 #tabs {
 	width: 100%;
 	height: 50px;
+	padding: 10px 20px;
 }
 
 #nav_list {
@@ -218,7 +172,7 @@ margin-left: 5px;
 ***************************/
 
 #map {
-	background-color: #e4682a;
+	background-color: #ef6e2e;
 	position:relative;
 	overflow:hidden;
 }
@@ -264,7 +218,7 @@ margin-left: 5px;
 #meals {
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_header.jpg);
+	background-image: url(../images/background_rest.jpg);
 	overflow: hidden;
 	position: relative;
 }
@@ -281,6 +235,12 @@ margin-left: 5px;
 	top:0px;
 	left:0px;
 	text-align:left;
+}
+
+.link.change {
+	color:#858585;
+	font-size: 1rem;
+	text-decoration: none;
 }
 
 .sectionSubtitle.meals {
@@ -306,7 +266,7 @@ margin-left: 5px;
 #menu_choices li img {
 	width:150px;
 	height:150px;
-	border:#fff solid 2px;
+	border:rgba(0,0,0,0.2); solid 2px;
 }
 
 #order {
@@ -351,6 +311,7 @@ margin-left: 5px;
 	font-family: 'Karla', sans-serif;
 	font-weight:400;
 	background:rgba(0, 0, 0, 0);
+	border-radius: 10px;
 	font-size:1.2rem;
 }
 
@@ -358,7 +319,7 @@ margin-left: 5px;
    SECTION DESIGN STYLES 
 ***************************/
 #design {
-	background-color: #F5851F;
+	background-color: #ef6e2e;
 	position:relative;
 	overflow:hidden;
 }
@@ -384,7 +345,11 @@ margin-left: 5px;
   height:128px;
   font-size:0;
   cursor:pointer;
-  background:url(../images/prev.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  background:url(../images/arrow_left.png) no-repeat;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
 .slidesjs-next {
@@ -397,7 +362,12 @@ margin-left: 5px;
   font-size:0;
   display:block;
   cursor:pointer;
-  background:url(../images/next.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  background:url(../images/arrow_right.png) no-repeat;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+
 }
 
 .slidesjs-play {
@@ -412,9 +382,11 @@ margin-left: 5px;
    SECTION BOOK STYLES 
 ***************************/
 #book {
+	background-color:#FF7400;
+	position: relative;
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_header.jpg);
+	background-image: url(../images/background_dishes.jpg);
 	position:relative;
 	overflow:hidden;
 }
@@ -466,6 +438,11 @@ margin-left: 5px;
 	text-align:center;
 }
 
+
+.book_btn {
+	width: 200px;
+}
+
 .total_price span {
 	font-size:2.6rem;
 }
@@ -497,26 +474,108 @@ margin-left: 5px;
 	font-size:1.2rem;
 }
 
+
 /**************************
-   SECTION CONTACT STYLES 
+   		BOOK POPUP FORM
 ***************************/
+
+.sectionSubtitle.form {
+	color:#fa5f0b;
+	margin:20px auto;
+	position:absolute;
+	text-align: center;
+}
+
+#form_container {
+	width: 600px;
+	height:600px;
+	border-radius:10px;
+	background-color: #fff;
+	overflow:hidden;
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin-left: -300px
+}
+
+#form {
+	margin: 20px auto;
+}
+
+.button.sub_btn {
+	width: 450px;
+	color:#fff;
+}
+
+input, select {
+	border: solid 1px #bebebe;
+	width: 450px;
+	height: 60px;
+	border-radius:10px;
+	font-size: 14px;
+	color:#424242;
+	margin:10px auto;
+	padding-left:10px; 
+	display:block;
+}
+
+/********************************
+   SECTION CONTACT + FOOTER STYLES 
+*********************************/
 
 #contact {
-	background-color:#F46844;
+	background-color:#ef6e2e;
+	position: relative;
+	overflow: hidden;
 }
 
-/**************************
-   SECTION FOOTER STYLES 
-***************************/
+.info_container {
+	width: 900px;
+	height: 600px;
+	margin: 0 auto;
+}
 
-footer {
+#info {
+	margin: 20% 7%;
+	width: 300px;
+	height: 200px;
+}
+
+.adress {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.hours {
+	margin-top: 11%;
+}
+
+.location {
+	margin: 0 auto;
+	display: inline-block;
+	float:left;
+	width: 300px;
+	height: 250px;
+}
+
+.floating {
+  float: left;
+  width: 46.5%;
+  margin-left: 7%;
+}
+.floating:nth-child(2n + 1) {
+   margin-left: 0;
+   margin-top: 17%;
+}
+
+footer  {
 	width: 100%;
-	height: 50px;
-	background-color: #ECD615;
-}
-
-footer select  {
-	float: left;
+	height: 50px; 
+	background-color: #424242;
+	position: absolute;
+	bottom: 0;
+	padding: 10px 20px;
 }
 
 #sm_footer {
@@ -525,4 +584,59 @@ footer select  {
 
 #sm_footer li {
 	display: inline-block;
+	padding-left: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+	html {
+		font-size:60%;
+	}
+	.sectionTitle.header {
+		top:300px;
+	}
+	.sectionSubtitle.header {
+		top:350px;
+	}
+	.m1280{width:430px} .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('continents-430.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:220px;width:430px} .m1280 .continents-cities{background-position:-440px 0} .m1280 .continents .m{margin:10000px 0 0 5px} .m1280 .continents .m span{font-size:26px !important;padding:0 1px 1px 0}
+	.m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:75px;left:171px;top:91px;width:75px}.m1280 .c1.focus .bg{background-position:-204px -433px}.m1280 .c1.active-region .bg{background-position:-644px -433px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:133px;left:216px;top:8px;width:141px}.m1280 .c2.focus .bg{background-position:-4px -266px}.m1280 .c2.active-region .bg{background-position:-444px -266px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:68px;left:311px;top:115px;width:87px}.m1280 .c3.focus .bg{background-position:-85px -431px}.m1280 .c3.active-region .bg{background-position:-525px -431px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:83px;left:168px;top:12px;width:81px}.m1280 .c4.focus .bg{background-position:-310px -425px}.m1280 .c4.active-region .bg{background-position:-750px -425px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:118px;left:8px;top:5px;width:175px}.m1280 .c5.focus .bg{background-position:-182px -266px}.m1280 .c5.active-region .bg{background-position:-622px -266px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:77px;left:102px;top:117px;width:51px}.m1280 .c6.focus .bg{background-position:-4px -429px}.m1280 .c6.active-region .bg{background-position:-444px -429px}
+	.m1280 .c1 a{left:225px;top:127px}.m1280 .c1 a.tooltip-right .tooltip-arrow{right:205px} .m1280 .c2 a{left:288px;top:72px}.m1280 .c2 a.tooltip-right .tooltip-arrow{right:142px} .m1280 .c3 a{left:345px;top:166px}.m1280 .c3 a.tooltip-right .tooltip-arrow{right:85px} .m1280 .c4 a{left:218px;top:82px}.m1280 .c4 a.tooltip-left .tooltip-arrow{left:218px} .m1280 .c5 a{left:94px;top:75px}.m1280 .c5 a.tooltip-left .tooltip-arrow{left:94px} .m1280 .c6 a{left:138px;top:151px}.m1280 .c6 a.tooltip-left .tooltip-arrow{left:138px}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	html {
+		font-size:70%;
+	}
+	.sectionTitle.header {
+		top:400px;
+	}
+	.sectionSubtitle.header {
+		top:450px;
+	}
+ 	.m1280{width:750px} .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('continents-750.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:395px;width:750px} .m1280 .continents-cities{background-position:-760px 0} .m1280 .continents .m{margin:9999px 0 0 -1px} .m1280 .continents .m span{font-size:47px !important;padding:0 1px 1px 0}
+	.m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:135px;left:309px;top:171px;width:135px}.m1280 .c1.focus .bg{background-position:-324px -704px}.m1280 .c1.active-region .bg{background-position:-1084px -704px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:241px;left:390px;top:21px;width:255px}.m1280 .c2.focus .bg{background-position:-5px -441px}.m1280 .c2.active-region .bg{background-position:-765px -441px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:123px;left:561px;top:215px;width:158px}.m1280 .c3.focus .bg{background-position:-128px -721px}.m1280 .c3.active-region .bg{background-position:-888px -721px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:149px;left:303px;top:27px;width:146px}.m1280 .c4.focus .bg{background-position:-499px -693px}.m1280 .c4.active-region .bg{background-position:-1259px -693px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:213px;left:13px;top:15px;width:316px}.m1280 .c5.focus .bg{background-position:-320px -441px}.m1280 .c5.active-region .bg{background-position:-1080px -441px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:140px;left:184px;top:218px;width:92px}.m1280 .c6.focus .bg{background-position:-5px -721px}.m1280 .c6.active-region .bg{background-position:-765px -721px}
+	.m1280 .c1 a{left:397px;top:229px} .m1280 .c2 a{left:512px;top:127px} .m1280 .c3 a{left:614px;top:298px}.m1280 .c3 a.tooltip-right .tooltip-arrow{right:136px} .m1280 .c4 a{left:385px;top:147px} .m1280 .c5 a{left:161px;top:134px}.m1280 .c5 a.tooltip-left .tooltip-arrow{left:161px} .m1280 .c6 a{left:240px;top:272px}
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+	html {
+		font-size:80%;
+	}
+	.sectionTitle.header {
+		top:500px;
+	}
+	.sectionSubtitle.header {
+		top:550px;
+	}
+	.m1280{width:960px} .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('../cssmap-continents/continents-960.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:495px;width:960px} .m1280 .continents-cities{background-position:-970px 0} .m1280 .continents .m{margin:9999px 0 0 0} .m1280 .continents .m span{font-size:60px !important}
+	.m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:172px;left:397px;top:219px;width:172px}.m1280 .c1.focus .bg{background-position:-484px -892px}.m1280 .c1.active-region .bg{background-position:-1454px -892px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:307px;left:501px;top:28px;width:325px}.m1280 .c2.focus .bg{background-position:-5px -551px}.m1280 .c2.active-region .bg{background-position:-975px -551px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:157px;left:720px;top:275px;width:201px}.m1280 .c3.focus .bg{background-position:-244px -927px}.m1280 .c3.active-region .bg{background-position:-1214px -927px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:191px;left:390px;top:36px;width:186px}.m1280 .c4.focus .bg{background-position:-5px -897px}.m1280 .c4.active-region .bg{background-position:-975px -897px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:272px;left:19px;top:19px;width:403px}.m1280 .c5.focus .bg{background-position:-426px -550px}.m1280 .c5.active-region .bg{background-position:-1396px -550px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:178px;left:238px;top:279px;width:117px}.m1280 .c6.focus .bg{background-position:-706px -882px}.m1280 .c6.active-region .bg{background-position:-1676px -882px}
+	.m1280 .c1 a{left:508px;top:290px} .m1280 .c2 a{left:654px;top:161px}.m1280 .c2 a.tooltip-right .tooltip-arrow{right:306px} .m1280 .c3 a{left:785px;top:379px}.m1280 .c3 a.tooltip-right .tooltip-arrow{right:175px} .m1280 .c4 a{left:493px;top:186px} .m1280 .c5 a{left:207px;top:169px}.m1280 .c5 a.tooltip-left .tooltip-arrow{left:207px} .m1280 .c6 a{left:308px;top:345px}.m1280 .c6 a.tooltip-left .tooltip-arrow{left:308px}
+}
+
+@media (min-width: 960px) {
+	html {
+		font-size:90%;
+	}
+ 	.m1280{width:1280px; } .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('../cssmap-continents/continents-1280.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:665px;width:1280px} .m1280 .continents-cities{background-position:-1300px 0} .m1280 .continents .m{margin:10001px 0 0 0} .m1280 .continents .m span{font-size:80px !important} .m1280 .continents .bg{padding:15px}
+	.m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:229px;left:528px;top:292px;width:230px}.m1280 .c1.focus .bg{background-position:-546px -1158px}.m1280 .c1.active-region .bg{background-position:-1846px -1158px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:409px;left:666px;top:36px;width:433px}.m1280 .c2.focus .bg{background-position:-13px -715px}.m1280 .c2.active-region .bg{background-position:-1313px -715px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:209px;left:958px;top:366px;width:268px}.m1280 .c3.focus .bg{background-position:-218px -1174px}.m1280 .c3.active-region .bg{background-position:-1518px -1174px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:254px;left:518px;top:47px;width:248px}.m1280 .c4.focus .bg{background-position:-835px -1128px}.m1280 .c4.active-region .bg{background-position:-2135px -1128px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:363px;left:25px;top:26px;width:537px}.m1280 .c5.focus .bg{background-position:-526px -716px}.m1280 .c5.active-region .bg{background-position:-1826px -716px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:237px;left:316px;top:371px;width:157px}.m1280 .c6.focus .bg{background-position:-23px -1164px}.m1280 .c6.active-region .bg{background-position:-1323px -1164px}
+	.m1280 .c1 a{left:677px;top:388px} .m1280 .c2 a{left:872px;top:216px} .m1280 .c3 a{left:1046px;top:506px}.m1280 .c3 a.tooltip-right .tooltip-arrow{right:234px} .m1280 .c4 a{left:657px;top:249px} .m1280 .c5 a{left:276px;top:226px}.m1280 .c5 a.tooltip-left .tooltip-arrow{left:276px} .m1280 .c6 a{left:410px;top:461px}
 }

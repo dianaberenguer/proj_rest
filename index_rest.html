@@ -4,12 +4,13 @@
 		<meta charset="UTF-8">
 		<title>reFusion</title>
 		<!-- STYLES -->
+		<link rel="stylesheet" type="text/css" href="css/datepicker.css">
 		<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/config.css">
+		<link rel="stylesheet" type="text/css" href="cssmap-continents/cssmap-continents.css" />
 		<link rel="stylesheet" type="text/css" href="css/rest.css">
 		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents/cssmap-continents.css" />
 	</head>
 	<body>
 		<header id="introduction" class="windowHeight">
@@ -21,7 +22,6 @@
 			</select>
 				<ul id="nav_list">
 					<!-- <li><img src="images/logorest.jpg" alt="logorest"></li> -->
-					
 					<li><a href="#book">Book</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li>
@@ -42,7 +42,8 @@
 				<h1 class="sectionTitle header">Create your unique menu</h1>
 				<h2 class="sectionSubtitle header">Choose between endless combination possibilities</h2>
 			</div>
-<!-- 			<img src="images/img_hummus.png" data-stellar-ratio="2.5" class="hummus" alt="Hummus" />
+<!-- 		
+			<img src="images/img_hummus.png" data-stellar-ratio="2.5" class="hummus" alt="Hummus" />
 			<img src="images/img_potatoe.png" data-stellar-ratio="4" class="potatoe" alt="Potatoes" />
 			<img src="images/img_sushi.png" data-stellar-ratio="3" class="sushi" alt="Sushi" />
 			<img src="images/img_meat.png" data-stellar-ratio="4" class="meat" alt="Meat" /> -->
@@ -53,7 +54,7 @@
 				<h2 class="sectionSubtitle map" data-stellar-ratio="1.7">Choose a location</h2>
 			</div>
 			<div>
-				<div id="map-continents" data-stellar-ratio="2">
+				<div id="map-continents">
 					 <ul class="continents">
 						  <li class="c1"><a href="#africa">Africa</a></li>
 						  <li class="c2"><a href="#asia">Asia</a></li>
@@ -71,18 +72,18 @@
 			<div class="meals_centerer">
 
 				<h1 class="sectionTitle meals">What do you want to eat?</h1>
-				<h2 class="sectionSubtitle meals">You're in America <a href="#">[change]</a></h2>
+				<h2 class="sectionSubtitle meals">You're in America <a class ="link change" href="#map">[change]</a></h2>
 
 				<ul id="menu_choices">
-					<li><a href="#" title="#"><img src="images/meals/beef.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/burger.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/mini-burguers.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/ribs.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/frankfurt.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/eggs.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/cerealfruit.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/cake.jpg" alt="#" /></a></li>
-					<li><a href="#" title="#"><img src="images/meals/cupcake.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/beef.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/burger.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/mini-burguers.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/ribs.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/frankfurt.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/eggs.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/cerealfruit.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/cake.jpg" alt="#" /></a></li>
+					<li><a href="" title=""><img src="images/meals/cupcake.jpg" alt="#" /></a></li>
 				</ul>
 				<aside id="order">
 					<div class="logoSmall">
@@ -97,16 +98,19 @@
 			</div>
 		</section>
 		<section id="design" class="windowHeight">
+			<div>
+				<h1 class="sectionTitle map" data-stellar-ratio="1.7"> You can even select the design of your tableware</h1>
+				<h2 class="sectionSubtitle map" data-stellar-ratio="1.5">See? We really mean it when we say “unique”</h2>
+			</div>
 			<div id="slides">
-				<img src="images/dish_dog.png" />
-				<img src="images/dish_cat.jpg" />
+				<img src="images/dish1.png" />
+				<img src="images/dish2.png" />
+				<img src="images/dish3.png" />
 			</div>
 		</section>
 		<section id="book" class="windowHeight">
-			
 			<h1 class="sectionTitle book">Book your plan</h1>
 			<h2 class="sectionSubtitle book">Confirm your choice</h2>
-	
 			<article id="book_container">
 				<div id="card">
 					<h2>Zone</h2>
@@ -120,36 +124,59 @@
 				<button class="button book_btn">BOOK</button>
 			</article>
 			<div id="form_container" class="popup">
+				<h2 class="sectionSubtitle form">Complete your booking</h2>
 				<form id="form">
 					<input type="text" placeholder="Write your name">
-					<input type="text" placeholder="How many people?">
-					<input type="text" placeholder="Which date">
 					<input type="text" placeholder="Email">
+					<select id="number_people" name="people">
+		                <option value="0">1</option>
+		                <option value="1">2</option>
+		                <option value="2">3</option>
+		                <option value="3">4</option>
+		                <option value="4">5</option>
+		                <option value="5">6</option>
+		                <option value="6">7</option>
+		                <option value="7">8</option>
+		                <option value="8">9</option>
+		                <option value="9">10</option>
+		                <option value="10">11</option>
+		                <option value="11">12</option>
+		            </select>
+					<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+					  <input class="span2" size="16" type="text" value="12-02-2012">
+					  <span class="add-on"><i class="icon-th"></i></span>
+					</div>
 					<button type="submit" class="button sub_btn">Booking</button>
 				</form>
 			</div>
 		</section>
 		<section id="contact" class="windowHeight">
-			<div id="info">
-				<h3>Address</h3>
-				<p>Oxford street 45 </br>6376 London</br>0055231652 </br> <a href="">info@refusion.com</a></p>
-				<p>Open from: 1pm to 2am</p>
-			</div>
+			<article class="info_container">
+				<div id="info" class="floating">
+					<h3 class="sectionTitle">Address</h3></br>
+					<p class="sectionSubtitle adress">Oxford street 45</br>6376 London</br>0055231652</br><a href="">info@refusion.com</a></p>
+					<p class="sectionSubtitle hours">Open from: 1pm to 2am</p>
+				</div>
+				<aside>
+					<iframe class="location floating" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.4179647120006!2d-0.13215380000004015!3d51.51622599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2cdff8b3cd%3A0x3b9cf8f40b781ffb!2s45+Oxford+St%2C+Soho%2C+London+W1D+2DZ%2C+Regne+Unit!5e0!3m2!1sca!2s!4v1414498842200" width="800" height="600" frameborder="0" style="border:0"></iframe>
+				</aside>
+			</article>
+			<footer id="footer" >
+				<ul id="sm_footer">
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</footer>
 		</section>
-		<footer id="footer" class="windowHeight">
-			<!-- lista sprites con tarjetas de pago -->
-			
-			<ul id="sm_footer">
-				<li><a href=""><i class="fa fa-facebook"></i></a></li>
-				<li><a href=""><i class="fa fa-instagram"></i></a></li>
-				<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-				<li><a href=""><i class="fa fa-pinterest"></i></a></li>
-			</ul>
-		</footer>
+
+
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 			<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 			<script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script>
 			<script type="text/javascript" src="js/rest.js"></script>
+			<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 	</body>
 </html>

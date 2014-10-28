@@ -73,6 +73,14 @@ $(function(){
 	    }
 	} }; 
 
+
+	$('#dp3').datepicker()
+	  .on('changeDate', function(ev){
+	    if (ev.date.valueOf() < startDate.valueOf()){
+	    }
+	  });
+	  
+
 	STELLARJS.init();
 
 	$("#slides").slidesjs({
