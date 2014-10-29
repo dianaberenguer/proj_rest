@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	color: #72686C;
+	color: orange;
 	font-size:100%;
 	font-family: 'Karla', sans-serif;
 }
@@ -48,6 +48,9 @@ body {
 
 }
 
+button:hover {
+	cursor: pointer;
+}
 
 /****************************
 	HEADER STYLE 
@@ -79,14 +82,14 @@ header {
    width: 300px;
 }
 
-#nav_list a:link {
-    color: #e2d1c1;
+#nav_list a:link, a:visited, a:active{
+    color: lightgrey;
     text-decoration: none;
 }
 
 #nav_list a:hover {
-color: white;
-text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 #language {
@@ -98,10 +101,16 @@ text-decoration: none;
 	font-weight: bold;
 	border:none;
 
+
+}
+
+#language:hover {
+	cursor: pointer;
 }
 
 ul#sm {
 	float: right;
+	margin-top: -25px;
 }
 
 .fa-facebook {
@@ -321,7 +330,9 @@ ul#sm {
 	display:none;
 }
 
-
+#slides:hover {
+	cursor: pointer;
+}
 .slidesjs-pagination {
 	display:none;
 }
@@ -341,7 +352,7 @@ ul#sm {
   width: 100px;
   height: 100px;
   background:url(../images/arrow_left.png) no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #371F0D;
   border-radius: 10px;
 }
 
@@ -358,7 +369,7 @@ ul#sm {
   width: 100px;
   height: 100px;
   background:url(../images/arrow_right.png) no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #371F0D;
   border-radius: 10px;
 
 }
@@ -411,7 +422,6 @@ ul#sm {
 }
 
 #card h3 {
-	
 	font-family: 'Karla', sans-serif;
 	font-weight:400;
 	color:#000;
@@ -540,6 +550,10 @@ input, #number_people {
 	text-align: left;
 }
 
+.adress a:hover {
+	color: white;
+	text-decoration: none;
+}
 .hours {
 	margin-top: 11%;
 }
@@ -565,7 +579,7 @@ input, #number_people {
 footer  {
 	width: 100%;
 	height: 50px; 
-	background-color: #00000;
+	background-color: #371F0D;
 	position: absolute;
 	bottom: 0;
 	padding: 10px 20px;
