@@ -16,7 +16,7 @@
 		<link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
 	</head>
 	<body>
-		<header id="introduction" class="windowHeight">
+		<header id="introduction" class="windowHeight" data-stellar-background-ratio="0.5">
 			<nav id="tabs">
 				<ul id="nav_list">
 					<!-- <li><img src="images/logorest.jpg" alt="logorest"></li> -->
@@ -46,9 +46,9 @@
 			</div>
 		</header>
 		<section id="map" class="windowHeight">
-			<div>
-				<h1 class="sectionTitle map" data-stellar-ratio="1.4">We can bring your senses anywhere</h1>
-				<h2 class="sectionSubtitle map" data-stellar-ratio="1.7">Choose a location</h2>
+			<div class="titlecontainer" data-stellar-ratio="1.7">
+				<h1 class="sectionTitle map">We can bring your senses anywhere</h1>
+				<h2 class="sectionSubtitle map">Choose a location</h2>
 			</div>
 			<div>
 				<div id="map-continents">
@@ -64,88 +64,94 @@
 				<!-- cómo lo divimos para que nos haga efecto hover? -->
 			</div>
 		</section>
-		<section id="meals" class="windowHeight">
+		<section id="meals" class="windowHeight" data-stellar-background-ratio="0.5">
 
-			<div class="meals_centerer">
+			<div class="meals_centerer" data-stellar-ratio="1.7">
 
 				<h1 class="sectionTitle meals">What do you want to eat?</h1>
-				<h2 class="sectionSubtitle meals">You're in America <a class ="link change" href="#map">[change]</a></h2>
+				<h2 class="sectionSubtitle meals">You're in <span id="continentSpan">America</span> <a class ="link change toMap" href="#map">[change]</a></h2>
 
 				<ul id="menu_choices">
-					<li><a href="" title=""><img src="images/meals/beef.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/burger.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/mini-burguers.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/ribs.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/frankfurt.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/eggs.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/cerealfruit.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/cake.jpg" alt="#" /></a></li>
-					<li><a href="" title=""><img src="images/meals/cupcake.jpg" alt="#" /></a></li>
+					<li><a href="Beef/12" class="selectMenu" title=""><img src="images/meals/beef.jpg" alt="#" /></a></li>
+					<li><a href="Burger/6" class="selectMenu" title=""><img src="images/meals/burger.jpg" alt="#" /></a></li>
+					<li><a href="Mini burguers/5" class="selectMenu" title=""><img src="images/meals/mini-burguers.jpg" alt="#" /></a></li>
+					<li><a href="Ribs/15" class="selectMenu" title=""><img src="images/meals/ribs.jpg" alt="#" /></a></li>
+					<li><a href="Frankfurt/6" class="selectMenu" title=""><img src="images/meals/frankfurt.jpg" alt="#" /></a></li>
+					<li><a href="Eggs/4" class="selectMenu" title=""><img src="images/meals/eggs.jpg" alt="#" /></a></li>
+					<li><a href="Cereal fruit/4" class="selectMenu" title=""><img src="images/meals/cerealfruit.jpg" alt="#" /></a></li>
+					<li><a href="Cake/8" class="selectMenu" title=""><img src="images/meals/cake.jpg" alt="#" /></a></li>
+					<li><a href="Cupcake/6" class="selectMenu" title=""><img src="images/meals/cupcake.jpg" alt="#" /></a></li>
 				</ul>
 				<aside id="order">
 					<div class="logoSmall">
 						<img src="images/logo_small.png" alt="reFusion" />
 					</div>
 					<ul class="orderList">
-						<li>Hamburger <span>$20</span></li>
-						<li>French fries <span>$18</span></li>
+						<li id="delete">Select an item from the side</li>
 					</ul>
-					<button id="confirm">OK</button>
+					<button class="confirm toDesign">Next</button>
 				</aside>
 			</div>
 		</section>
 		<section id="design" class="windowHeight">
-			<div>
-				<h1 class="sectionTitle map" data-stellar-ratio="1.7"> You can even select the design of your tableware</h1>
-				<h2 class="sectionSubtitle map" data-stellar-ratio="1.5">See? We really mean it when we say “unique”</h2>
+			<div class="titlecontainer" data-stellar-ratio="1.7">
+				<h1 class="sectionTitle map"> You can even select the design of your tableware</h1>
+				<h2 class="sectionSubtitle map">See? We really mean it when we say “unique”</h2>
 			</div>
 			<div id="slides">
-				<img src="images/dish1.png" />
-				<img src="images/dish2.png" />
-				<img src="images/dish3.png" />
+				<img class="dish flower" src="images/dish1.png" />
+				<img class="dish bird" src="images/dish2.png" />
+				<img class="dish fancy" src="images/dish3.png" />
 			</div>
 		</section>
-		<section id="book" class="windowHeight">
-			<h1 class="sectionTitle book">Book your plan</h1>
-			<h2 class="sectionSubtitle book">Confirm your choice</h2>
-			<article id="book_container">
+		<section id="book" class="windowHeight" data-stellar-background-ratio="0.5">
+			
+			<div class="windowHeight fade"></div>
+			<div class="windowHeight upper">
+				<div id="form_container" class="popup">
+					<h2 class="sectionSubtitle form">Complete your booking</h2>
+					<form id="form">
+						<input type="text" placeholder="Write your name">
+						<input type="text" placeholder="Email">
+						<select id="number_people" name="people">
+			                <option value="0">1</option>
+			                <option value="1">2</option>
+			                <option value="2">3</option>
+			                <option value="3">4</option>
+			                <option value="4">5</option>
+			                <option value="5">6</option>
+			                <option value="6">7</option>
+			                <option value="7">8</option>
+			                <option value="8">9</option>
+			                <option value="9">10</option>
+			                <option value="10">11</option>
+			                <option value="11">12</option>
+			            </select>
+						<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+						  <input class="span2" size="16" type="text" value="12-02-2012">
+						  <span class="add-on"><i class="icon-th"></i></span>
+						</div>
+						<button type="submit" class="button sub_btn">Booking</button>
+					</form>
+				</div>
+			</div>
+			
+			<article id="book_container" data-stellar-ratio="1.7">
+				
+				<h1 class="sectionTitle book">Book your plan</h1>
+				<h2 class="sectionSubtitle book">Confirm your choice</h2>
+
 				<div id="card">
 					<h2>Zone</h2>
-					<h3>Continente escogido linkado</h3>
+					<h3 id="continentH3"><a class="toMap" href="#">Choose a continent</a></h3>
 					<h2>Menu</h2>
-					<h3>Nombre menú linkado</h3>
+					<h3 id="menuItems"><a class="toMeals" href="#">Select a menu</a></h3>
 					<h2>Design</h2>
-					<h3>Plato escogido linkado</h3>
-					<div class= "total_price"><span>$20</span><br />per person</div>
+					<h3 id="dishDesign"><a class="toDesign" href="#">Select a design</a></h3>
+					<div class= "total_price"><span>$<span class="int">0</span></span><br />per person</div>
 				</div>
-				<button class="button book_btn">BOOK</button>
+				<button id="bookingBtn" class="button book_btn">BOOK</button>
 			</article>
-			<div id="form_container" class="popup">
-				<h2 class="sectionSubtitle form">Complete your booking</h2>
-				<form id="form">
-					<input type="text" placeholder="Write your name">
-					<input type="text" placeholder="Email">
-					<select id="number_people" name="people">
-		                <option value="0">1</option>
-		                <option value="1">2</option>
-		                <option value="2">3</option>
-		                <option value="3">4</option>
-		                <option value="4">5</option>
-		                <option value="5">6</option>
-		                <option value="6">7</option>
-		                <option value="7">8</option>
-		                <option value="8">9</option>
-		                <option value="9">10</option>
-		                <option value="10">11</option>
-		                <option value="11">12</option>
-		            </select>
-					<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-					  <input class="span2" size="16" type="text" value="12-02-2012">
-					  <span class="add-on"><i class="icon-th"></i></span>
-					</div>
-					<button type="submit" class="button sub_btn">Booking</button>
-				</form>
-			</div>
 		</section>
 		<section id="contact" class="windowHeight">
 			<article class="info_container">
@@ -169,10 +175,11 @@
 		</section>
 
 
-			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery.easing.js"></script>
 			<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 			<script type="text/javascript" src="js/jquery.slides.min.js"></script>
-			<script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script>
+			<script type="text/javascript" src="js/jquery.cssmap.js"></script>
 			<script type="text/javascript" src="js/rest.js"></script>
 			<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 	</body>
