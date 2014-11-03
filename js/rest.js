@@ -133,6 +133,7 @@ $(function(){
 	$('.toMap').click( function(e){ e.preventDefault(); animateTo('#map'); });
 	$('.toDesign').click( function(e){ e.preventDefault(); animateTo('#design'); });
 	$('.toMeals').click( function(e){ e.preventDefault(); animateTo('#meals'); });
+	$('.toContact').click( function(e){ e.preventDefault(); animateTo('#contact'); });
 	
 	$('.dish').click( function(e){ 
 		e.preventDefault();
