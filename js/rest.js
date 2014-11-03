@@ -85,13 +85,6 @@ $(function(){
 	} }; 
 
 
-	$('#dp3').datepicker()
-	  .on('changeDate', function(ev){
-	    if (ev.date.valueOf() < startDate.valueOf()){
-	    }
-	  });
-	  
-
 	STELLARJS.init();
 
 	$("#slides").slidesjs({
@@ -161,6 +154,6 @@ $(function(){
 	});
 
 	$('.fade, .upper').hide();
-	$('#bookingBtn').click( function(e){ e.preventDefault(); $('.fade, .upper').fadeIn(); $('#book_container').hide(); });
+	$('#bookingBtn').click( function(e){ e.preventDefault(); $('.fade, .upper').fadeIn(); $('#book_container').fadeOut(); });
 
 });
