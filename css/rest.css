@@ -677,15 +677,23 @@ footer  {
 		font-size:1.2rem;
 	}
 
+	#slides {
+		padding-top:65px;
+	}
+
 	.slidesjs-previous {
 	  width: 40px;
 	  height: 40px;
+	  top:160px;
+	  left:30px;
 	  background-size: 100%;
 	 }
 
 	.slidesjs-next {
 	  width: 40px;
 	  height: 40px;
+	  top:160px;
+	  right:30px;
 	  background-size: 100%;
 	}
 
@@ -787,13 +795,21 @@ footer  {
 	.slidesjs-previous {
 	  width: 60px;
 	  height: 60px;
+	  top:180px;
+	  left:50px;
 	  background-size: 100%;
 	 }
 
 	.slidesjs-next {
 	  width: 60px;
 	  height: 60px;
+	  top:180px;
+	  right:50px;
 	  background-size: 100%;
+	}
+
+	#slides {
+		padding-top:45px;
 	}
 
 	.imgMap {
@@ -943,12 +959,14 @@ footer  {
 	.slidesjs-previous {
 	  width: 80px;
 	  height: 80px;
+	  top:200px;
 	  background-size: 100%;
 	 }
 
 	.slidesjs-next {
 	  width: 80px;
 	  height: 80px;
+	  top:200px;
 	  background-size: 100%;
 	}
 
