@@ -58,7 +58,7 @@ header {
 	position: relative;
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_chicken.jpg);
+	background-image: url(https://dl-web.dropbox.com/get/projec_rest/background_chicken.jpg?_subject_uid=89344857&w=AADtJOFnbLmH_7rPI_0LP6s9xpMV5fD-_dftPG4A1Sauyg);
 	overflow: hidden;
 }
 
@@ -228,7 +228,7 @@ ul#sm {
 #meals {
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_rest.jpg);
+	background-image: url(https://dl-web.dropbox.com/get/projec_rest/background_rest.jpg?_subject_uid=89344857&w=AADyml9cdE0Ad-RXT2GNxWFvm-OVT8Sz7gk_2uPkrrpWbQ);
 	overflow: hidden;
 	position: relative;
 }
@@ -363,7 +363,7 @@ ul#sm {
   cursor:pointer;
   width: 100px;
   height: 100px;
-  background:url(../images/arrow_left.png) no-repeat;
+  background:url(https://dl-web.dropbox.com/get/projec_rest/arrow_left.png?_subject_uid=89344857&w=AABTezJj2nX0HjN-5Hn_a5ddii3KpvXjvXk5D4NBIBblZQ) no-repeat;
   background-color: rgba(0,0,0,0.2);
   border-radius: 10px;
 }
@@ -380,7 +380,7 @@ ul#sm {
   cursor:pointer;
   width: 100px;
   height: 100px;
-  background:url(../images/arrow_right.png) no-repeat;
+  background:url(https://dl-web.dropbox.com/get/projec_rest/arrow_right.png?_subject_uid=89344857&w=AAB-w0h1heXse6Gx5OkEpTB7TQyuW4704V9Mh06hWHoUTA) no-repeat;
   background-color: rgba(0,0,0,0.2);
   border-radius: 10px;
 }
@@ -402,7 +402,7 @@ ul#sm {
 	position: relative;
 	background:#000;
 	background-size: cover;
-	background-image: url(../images/background_dishes.jpg);
+	background-image: url(https://dl-web.dropbox.com/get/projec_rest/background_dishes.jpg?_subject_uid=89344857&w=AAB7AsX7LofJknzmH4AtF_7aePo8aYEL_RipdlrtFEIlog);
 	position:relative;
 	overflow:hidden;
 }
@@ -494,7 +494,7 @@ ul#sm {
    		BOOK POPUP FORM
 ***************************/
 
-.fade { width:100%; position:absolute; top:0; left:0; background:url(../images/fade.png) repeat; z-index:0;}
+.fade { width:100%; position:absolute; top:0; left:0; background:url(https://dl-web.dropbox.com/get/projec_rest/fade.png?_subject_uid=89344857&w=AABw_gmuGfkdyHtQVrfw2vr1uNvGnckX06LLDnPT-AKCew) repeat; z-index:0;}
 .upper { width:100%; position:absolute; top:0; left:0; z-index:1; }
 
 .sectionSubtitle.form {
